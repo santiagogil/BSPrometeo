@@ -14,13 +14,8 @@
 
 get_header();
 if (have_posts() ) ;?>
-<div class="row">
-	<div class="container">
-		<?php if (function_exists('bootstrapwp_breadcrumbs')) bootstrapwp_breadcrumbs(); ?>
-	</div><!--/.container -->
-</div><!--/.row -->
-<div class="container">
 	<header class="jumbotron subhead" id="overview">
+	<div class="container">
 		<h1><?php
 		if ( is_day() ) {
 			printf( __( 'Daily Archives: %s', 'bootstrapwp' ), '<span>' . get_the_date() . '</span>' );
@@ -44,9 +39,14 @@ if (have_posts() ) ;?>
 			_e( 'Blog Archives', 'bootstrapwp' );
 		}
 		?></h1>
-	</h1>
+</div>
 </header>
-
+<div class="row">
+        <div class="container">
+                <?php if (function_exists('bootstrapwp_breadcrumbs')) bootstrapwp_breadcrumbs(); ?>
+        </div><!--/.container -->
+</div><!--/.row -->
+<div class="container">
 <div class="row content">
 	<div class="span8">
 		<?php while ( have_posts() ) : the_post(); ?>
