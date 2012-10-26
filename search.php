@@ -11,15 +11,15 @@
  * Last Revised: January 22, 2012
  */
 get_header(); ?>
- <div class="container">
 <?php if ( have_posts() ) : ?>
   
     <!-- Masthead
       ================================================== -->
-      <header class="jumbotron subhead" id="overview">
+      <header class="jumbotron subhead" id="overview"><div class="container">
         <h1><?php printf( __( 'Search Results for: %s', 'bootstrapwp' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-       
+       </div>
       </header>
+<div class="container">
 			 <div class="row content">
 <div class="span8">
 					<?php while ( have_posts() ) : the_post(); ?>
@@ -31,10 +31,12 @@ get_header(); ?>
 			<?php else : ?>
  <!-- Masthead
       ================================================== -->
-      <header class="jumbotron subhead" id="overview">
+      <header class="jumbotron subhead" id="overview"><div class="container">
         <h1><?php _e( 'No Results Found', 'bootstrapwp' ); ?></h1>
       <p class="lead"><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps you should try again with a different search term.', 'bootstrapwp' ); ?></p>
+</div>
       </header>
+<div class="container">
 			 <div class="row content">
 <div class="span8">
 					
