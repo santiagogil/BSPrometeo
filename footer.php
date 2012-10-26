@@ -12,7 +12,7 @@
     <!-- End Template Content -->
       <footer>
 <div class="container">
-      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p class="pull-right"><a class="btn" href="#">Back to top  <i class="chevron-up"></i></a></p>
           <?php
     if ( function_exists('dynamic_sidebar')) dynamic_sidebar("footer-content");
 ?>
