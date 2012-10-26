@@ -6304,7 +6304,7 @@ hr.soften {
 ------------------------- */
 .masthead {
   padding: 70px 0 80px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   color: #fff;
 }
 .masthead h1 {
@@ -6353,7 +6353,7 @@ hr.soften {
 ------------------------- */
 .subhead {
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
 }
 .subhead h1 {
   font-size: 60px;
